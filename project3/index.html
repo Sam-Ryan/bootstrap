@@ -4,27 +4,30 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Article Heading</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-info">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-info mb-3">
         <div class="container">
             <i class="fas fa-address-card fa-lg pr-2 d-none d-sm-block m-2"></i>
-            <a href="#" class="navbar-brand">Knowledge Base!</a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav">
+            <a href="#" class="navbar-brand">Knowledge base!</a>
+            
+            <button class="navbar-toggler" data-toggle="collapse" data-target="dropDownMenuButton">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="nav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <div class="dropdown">
-                            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown button
+                            <button class="btn btn-secondary btn-lg btn-block bg-info dropdown-toggle" type="button"
+                                data-target="dropDownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Dropdown
                             </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <div class="dropdown-menu" id="dropDownMenuButton">
                                 <a class="dropdown-item" href="#">Action</a>
                                 <a class="dropdown-item" href="#">Another action</a>
                                 <a class="dropdown-item" href="#">Something else here</a>
@@ -36,24 +39,36 @@
 
         </div>
     </nav>
+
+    <!-- SEARCH BOX -->
+    <div class="container">
+        <div class="row flex-lg-row-reverse mb-3">
+            <div class="col-12 mb-3">
+                <form>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="How can we help you?"
+                            aria-label="Text input with button" aria-describedby="buttonAfter">
+                        <button type="button" class="btn btn-secondary btn-lg btn-block bg-info"
+                            id="buttonAfter">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN BODY -->
     <div class="container">
         <h4 class="h5 text-muted mt-3"></h4>
-
-        <!-- SEARCH BOX -->
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search text here" aria-label="Text input with button"
-                aria-describedby="buttonAfter">
-            <button type="button" class="btn btn-secondary" id="buttonAfter">Search</button>
-        </div>
-        <h1 class="text-center">Most read Articles</h1>
+        <h1 class="text-center mb-3">Most read Articles</h1>
         <div class="row">
+
             <!-- CARDS -->
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="card mb-3">
                     <img src="img/930x700.png" class="card-img-top">
                     <div class="card-body">
                         <div class="card-title h5 text-center">
-                            <a href="#0">Article Heading</a>
+                            <a href="article.html">Article Heading</a>
                         </div>
                         <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Molestias
@@ -67,7 +82,7 @@
                     <img src="img/930x700.png" class="card-img-top">
                     <div class="card-body">
                         <div class="card-title h5 text-center">
-                            <a href="#0">Article Heading</a>
+                            <a href="article.html">Article Heading</a>
                         </div>
                         <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Molestias
@@ -81,7 +96,7 @@
                     <img src="img/930x700.png" class="card-img-top">
                     <div class="card-body">
                         <div class="card-title h5 text-center">
-                            <a href="#0">Article Heading</a>
+                            <a href="article.html">Article Heading</a>
                         </div>
                         <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Molestias
@@ -95,7 +110,7 @@
                     <img src="img/930x700.png" class="card-img-top">
                     <div class="card-body">
                         <div class="card-title h5 text-center">
-                            <a href="#0">Article Heading</a>
+                            <a href="article.html">Article Heading</a>
                         </div>
                         <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Molestias
@@ -106,13 +121,16 @@
             </div>
 
             <hr>
-            
+
+            <!-- CATEGORY SECTION -->
+
             <h1 class="text-center">Categories</h1>
+
             <div class="col-12 col-sm-6 col-lg-3 ">
                 <div class="card mb-3 border-0">
                     <div class="card-body">
                         <div class="card-title h5 text-center">
-                            <a href="#0">Article Heading</a>
+                            <a href="category.html">Category Heading</a>
                         </div>
                         <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Molestias
@@ -126,7 +144,7 @@
                 <div class="card mb-3 border-0">
                     <div class="card-body">
                         <div class="card-title h5 text-center">
-                            <a href="#0">Article Heading</a>
+                            <a href="category.html">Category Heading</a>
                         </div>
                         <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Molestias
@@ -140,7 +158,7 @@
                 <div class="card mb-3 border-0">
                     <div class="card-body">
                         <div class="card-title h5 text-center">
-                            <a href="#0">Article Heading</a>
+                            <a href="category.html">Category Heading</a>
                         </div>
                         <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Molestias
@@ -154,7 +172,7 @@
                 <div class="card mb-3 border-0">
                     <div class="card-body">
                         <div class="card-title h5 text-center">
-                            <a href="#0">Article Heading</a>
+                            <a href="category.html">Category Heading</a>
                         </div>
                         <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Molestias
@@ -164,19 +182,147 @@
                 </div>
             </div>
 
+            <div class="col-12 col-sm-6 col-lg-3 ">
+                <div class="card mb-3 border-0">
+                    <div class="card-body">
+                        <div class="card-title h5 text-center">
+                            <a href="category.html">Category Heading</a>
+                        </div>
+                        <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Molestias
+                            perferendis
+                            saepe reprehenderit dolorum quae beatae minima, voluptas asperiores impedit. Corrupti?</p>
+                    </div>
+                </div>
+            </div>
 
+            <div class="col-12 col-sm-6 col-lg-3 ">
+                <div class="card mb-3 border-0">
+                    <div class="card-body">
+                        <div class="card-title h5 text-center">
+                            <a href="category.html">Category Heading</a>
+                        </div>
+                        <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Molestias
+                            perferendis
+                            saepe reprehenderit dolorum quae beatae minima, voluptas asperiores impedit. Corrupti?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 ">
+                <div class="card mb-3 border-0">
+                    <div class="card-body">
+                        <div class="card-title h5 text-center">
+                            <a href="category.html">Category Heading</a>
+                        </div>
+                        <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Molestias
+                            perferendis
+                            saepe reprehenderit dolorum quae beatae minima, voluptas asperiores impedit. Corrupti?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 ">
+                <div class="card mb-3 border-0">
+                    <div class="card-body">
+                        <div class="card-title h5 text-center">
+                            <a href="category.html">Category Heading</a>
+                        </div>
+                        <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Molestias
+                            perferendis
+                            saepe reprehenderit dolorum quae beatae minima, voluptas asperiores impedit. Corrupti?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 ">
+                <div class="card mb-3 border-0">
+                    <div class="card-body">
+                        <div class="card-title h5 text-center">
+                            <a href="category.html">Category Heading</a>
+                        </div>
+                        <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Molestias
+                            perferendis
+                            saepe reprehenderit dolorum quae beatae minima, voluptas asperiores impedit. Corrupti?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 ">
+                <div class="card mb-3 border-0">
+                    <div class="card-body">
+                        <div class="card-title h5 text-center">
+                            <a href="category.html">Category Heading</a>
+                        </div>
+                        <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Molestias
+                            perferendis
+                            saepe reprehenderit dolorum quae beatae minima, voluptas asperiores impedit. Corrupti?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 ">
+                <div class="card mb-3 border-0">
+                    <div class="card-body">
+                        <div class="card-title h5 text-center">
+                            <a href="category.html">Category Heading</a>
+                        </div>
+                        <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Molestias
+                            perferendis
+                            saepe reprehenderit dolorum quae beatae minima, voluptas asperiores impedit. Corrupti?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 ">
+                <div class="card mb-3 border-0">
+                    <div class="card-body">
+                        <div class="card-title h5 text-center">
+                            <a href="category.html">Category Heading</a>
+                        </div>
+                        <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Molestias
+                            perferendis
+                            saepe reprehenderit dolorum quae beatae minima, voluptas asperiores impedit. Corrupti?</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </div>
-    <!-- ENTER SEXY CODE HERE -->
-    <br></br>
 
-    <footer class="bg-info py-4">
+    <!-- FOOTER -->
+    <footer class="bg-info pt-3">
         <div class="container">
             <div class="row">
-                <p class="text-center mb-0">&copy; 2023 Sam Ryan. All rights reserved.</p>
+                <figure class="text-center">
+                    <img src="img/50x50.png" alt="">
+                </figure>
             </div>
+            <div class="row">
+                <p class="text-center">&copy; 2023 Sam Ryan. All rights reserved.</p>
+            </div>
+            <div class="row text-center">
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <i class="fas fa-address-card fa-lg"></i><a href="" class="">Tutorials </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fas fa-address-card fa-lg"></i><a href="" class="">On </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fas fa-address-card fa-lg"></i><a href="" class="">Yer Maw </a>
+                    </li>
+                </ul>         
+            </div>
+        </div>
     </footer>
+
     <script src="js/bootstrap.bundle.min.js"></script>
     <script defer src="js/all.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
