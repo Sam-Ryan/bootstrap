@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Article Heading</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="">
+    <div class="div text-center mt-5">
+        <h1>Survey Name</h1>
+        <p class="lead">Subtitle for the survey</p>
+    </div>
+
+    <div class="container">
+        <!-- TABS -->
+        <ul class="nav nav-tabs nav-fill" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button type="button" id="step-1-tab" class="nav-link active" data-bs-toggle="tab"
+                    data-bs-target="#step-1" role="tab" aria-controls="step-1" aria-selected="true">
+                    <h4>Step 1</h4>
+                    <small>Personal Info</small>
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button type="button" id="step-2-tab" class="nav-link" data-bs-toggle="tab" data-bs-target="#step-2"
+                    role="tab" aria-controls="step-2" aria-selected="false">
+                    <h4>Step 2</h4>
+                    <small>Questions w/Answers</small>
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button type="button" id="step-3-tab" class="nav-link" data-bs-toggle="tab" data-bs-target="#step-3"
+                    role="tab" aria-controls="step-3" aria-selected="false">
+                    <h4>Step 3</h4>
+                    <small>Questions w/Ratings</small>
+                </button>
+            </li>
+        </ul>
+
+        <!-- TAB CONTENT -->
+        <div class="tab-content">
+            <!-- STEP 1 CONTENT -->
+            <div id="step-1" class="tab-pane fade show active" role="tabpanel" aria-labelledby="step-1-tab">
+
+                <div class="form-group">
+                    <!-- ROW 1 -->
+                    <div class="row mt-4">
+                        <div class="col-3">
+                            <div class="mb-1">
+                                <div class="form-group">
+                                    <p>Sex:</p>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="pet" id="cats">
+                                        <label class="form-check-label" for="cats">Male</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="pet" id="rabbits">
+                                        <label class="form-check-label" for="rabbits">Female</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="mb-1">
+                                <label for="enterAge" class="form-label">Age</label>
+                                <input type="text" class="form-control" aria-describedby="age">
+                                <div id="age" class="form-text"></div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-1">
+                                <label for="enterPhoneNumber" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" aria-describedby="phoneNumber">
+                                <div id="emailHelp" class="form-text">We'll never pranky you, honest...</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ROW 2 -->
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <div class="mb-1">
+                                <label for="enterFullName" class="form-label">Full Name:</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-1">
+                                <label for="enterEmailAddress" class="form-label">Email Address:</label>
+                                <input type="email" class="form-control" aria-describedby="emailAddress"
+                                    placeholder="username@domain.com">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ROW 3 -->
+                    <div class="row mt-4">
+                        <div class="col-9">
+                            <div class="mb-1">
+                                <label for="enterFullAddress" class="form-label">Address:</label>
+                                <input type="text" class="form-control" placeholder="123 Street Name">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="mb-1">
+                                <label for="enterLocation" class="form-label">Apartment or Floor:</label>
+                                <input type="text" class="form-control" aria-describedby="apartmentOrFloor"
+                                    placeholder="B3, 4th Floor or similar">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ROW 4 -->
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <div class="mb-1">
+                                <label for="enterFullName" class="form-label">Address:</label>
+                                <input type="text" class="form-control" placeholder="123 Street Name">
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="mb-1">
+                                <label for="enterZip" class="form-label">Zip:</label>
+                                <input type="number" class="form-control" aria-describedby="zip" placeholder="123">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="mb-1">
+                                <label for="country" class="form-label">Country:</label>
+                                <select id="country" class="form-select">
+                                    <option value="" selected="">- Select Country -</option>
+                                    <option value="Denmark">Denmark</option>
+                                    <option value="Finland">Finland</option>
+                                    <option value="Norway">Norway</option>
+                                    <option value="Sweden">Sweden</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <button type="button" class="btn btn-outline-primary mt-3" id="go-to-step-2">Step 2</button>
+                </div>
+            </div>
+
+            <!-- STEP 2 TAB CONTENTS -->
+            <div id="step-2" class="tab-pane fade" role="tabpanel" aria-labelledby="step-2-tab">
+                <h4 class="text-center mt-3">Question #1: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Laborum, perspiciatis?</h4>
+                <div class="row mt-4">
+                    <div class="col-6">
+                        <figure>
+                            <img src="img/1600x900.png" class="figure-img img-fluid rounded" alt="">
+                        </figure>
+                        <figcaption class="figure-caption">Image Caption</figcaption>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio">
+                                <label class="form-check-label" for="cats">Answer 1</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio">
+                                <label class="form-check-label" for="rabbits">Answer 2</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio">
+                                <label class="form-check-label" for="rabbits">Answer 3</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio">
+                                <label class="form-check-label" for="rabbits">Answer 4</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio">
+                                <label class="form-check-label" for="rabbits">Answer 5</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio">
+                                <input type="text" class="text" for="rabbits" placeholder="Other"></label>
+
+                            </div>
+                            <div class="div">
+                                <small class="mx-3">If none of these questions are appropriate, Fuck Off!</small>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+
+                <h4 class="text-center mt-3">Question #2: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Laborum, perspiciatis?</h4>
+                <div class="row mt-4">
+                    <div class="col-6">
+                        <figure>
+                            <img src="img/1600x900.png" class="figure-img img-fluid rounded" alt="">
+                        </figure>
+                        <figcaption class="figure-caption">Image Caption</figcaption>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label" for="cats">Answer 1</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label" for="rabbits">Answer 2</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label" for="rabbits">Answer 3</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label" for="rabbits">Answer 4</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label" for="rabbits">Answer 5</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <input type="text" class="text" for="rabbits" placeholder="Other"></label>
+                            </div>
+                            <div class="div">
+                                <small class="mx-3">If none of these questions are appropriate, Fuck Off!</small>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+
+                <h4 class="text-center mt-3">Question #3: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Laborum, perspiciatis?</h4>
+                <div class="row mt-4">
+                    <div class="col-6">
+                        <figure>
+                            <img src="img/1600x900.png" class="figure-img img-fluid rounded" alt="">
+                        </figure>
+                        <figcaption class="figure-caption">Image Caption</figcaption>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio">
+                                <label class="form-check-label" for="cats">Answer 1</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio">
+                                <label class="form-check-label" for="rabbits">Answer 2</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio">
+                                <label class="form-check-label" for="rabbits">Answer 3</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio">
+                                <label class="form-check-label" for="rabbits">Answer 4</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio">
+                                <label class="form-check-label" for="rabbits">Answer 5</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio">
+                                <input type="text" class="text" for="rabbits" placeholder="Other"></label>
+                            </div>
+                            <div class="div">
+                                <small class="mx-3">If none of these questions are appropriate, Fuck Off!</small>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="row">
+                    <button type="button" class="btn btn-outline-primary mt-3" id="go-to-step-3">Step 3</button>
+                </div>
+
+            </div>
+
+            <!-- STEP 3 TAB CONTENTS -->
+            <div id="step-3" class="tab-pane fade" role="tabpanel" aria-labelledby="step-3-tab">
+                <div class="row mt-5">
+                    <div class="col">
+                        <div class="h4">Question #5: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi,
+                            odit?</div>
+                        <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos mollitia
+                            illo aspernatur molestiae? Expedita accusamus earum cupiditate ipsum. Iste, fugiat.</div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex justify-content-between">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="pet" id="1">
+                                <label class="form-check-label" for="1">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="pet" id="2">
+                                <label class="form-check-label" for="2">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="pet" id="3">
+                                <label class="form-check-label" for="3">3</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="pet" id="4">
+                                <label class="form-check-label" for="4">4</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="pet" id="5">
+                                <label class="form-check-label" for="5">5</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="pet" id="5">
+                                <label class="form-check-label" for="N/A">N/A</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="textarea"></label>
+                                <textarea id="textarea" class="form-control text-muted"
+                                    rows="4">Write a comment here...</textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mt-5">
+
+                    <div class="row mt-5">
+                        <div class="col">
+                            <div class="h4">Question #5: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Commodi, odit?</div>
+                            <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos mollitia
+                                illo aspernatur molestiae? Expedita accusamus earum cupiditate ipsum. Iste, fugiat.
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex justify-content-between">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="pet" id="1">
+                                    <label class="form-check-label" for="1">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="pet" id="2">
+                                    <label class="form-check-label" for="2">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="pet" id="3">
+                                    <label class="form-check-label" for="3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="pet" id="4">
+                                    <label class="form-check-label" for="4">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="pet" id="5">
+                                    <label class="form-check-label" for="5">5</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="pet" id="5">
+                                    <label class="form-check-label" for="N/A">N/A</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label for="textarea"></label>
+                                    <textarea id="textarea" class="form-control text-muted"
+                                        rows="4">Write a comment here...</textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="mt-5">
+
+                        <div class="row mt-5">
+                            <div class="col">
+                                <div class="h4">Question #5: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Commodi, odit?</div>
+                                <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+                                    mollitia illo aspernatur molestiae? Expedita accusamus earum cupiditate ipsum. Iste,
+                                    fugiat.</div>
+                            </div>
+                            <div class="col">
+                                <div class="btn-group btn-group-lg d-flex justify-content-between">
+                                    <input type="radio" class="btn-check btn-lg" name="radioToggleButtonOutlined"
+                                        id="radioToggleButtonOutlined1" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="radioToggleButtonOutlined1">1</label>
+                                    <input type="radio" class="btn-check" name="radioToggleButtonOutlined"
+                                        id="radioToggleButtonOutlined2" autocomplete="off">
+                                    <label class="btn btn-outline-success" for="radioToggleButtonOutlined2">2</label>
+                                    <input type="radio" class="btn-check" name="radioToggleButtonOutlined"
+                                        id="radioToggleButtonOutlined3" autocomplete="off">
+                                    <label class="btn btn-outline-info" for="radioToggleButtonOutlined3">3</label>
+                                    <input type="radio" class="btn-check btn-lg" name="radioToggleButtonOutlined"
+                                        id="radioToggleButtonOutlined1" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="radioToggleButtonOutlined1">4</label>
+                                    <input type="radio" class="btn-check btn-lg" name="radioToggleButtonOutlined"
+                                        id="radioToggleButtonOutlined1" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="radioToggleButtonOutlined1">5</label>
+                                    <input type="radio" class="btn-check btn-lg" name="radioToggleButtonOutlined"
+                                        id="radioToggleButtonOutlined1" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="radioToggleButtonOutlined1">N/A</label>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label for="textarea"></label>
+                                        <textarea id="textarea" class="form-control text-muted"
+                                            rows="4">Write a comment here...</textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="mt-5">
+                            <div class="row mt-5">
+                                <div class="col">
+                                    <div class="h4">Question #5: Lorem ipsum dolor sit amet consectetur, adipisicing
+                                        elit. Commodi, odit?</div>
+                                    <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+                                        mollitia illo aspernatur molestiae? Expedita accusamus earum cupiditate ipsum.
+                                        Iste, fugiat.</div>
+                                </div>
+                                <div class="col">
+                                    <div class="btn-group btn-group-lg d-flex justify-content-between">
+                                        <input type="radio" class="btn-check btn-lg" name="radioToggleButtonOutlined"
+                                            id="radioToggleButtonOutlined1" autocomplete="off">
+                                        <label class="btn btn-outline-primary"
+                                            for="radioToggleButtonOutlined1">1</label>
+                                        <input type="radio" class="btn-check" name="radioToggleButtonOutlined"
+                                            id="radioToggleButtonOutlined2" autocomplete="off">
+                                        <label class="btn btn-outline-success"
+                                            for="radioToggleButtonOutlined2">2</label>
+                                        <input type="radio" class="btn-check" name="radioToggleButtonOutlined"
+                                            id="radioToggleButtonOutlined3" autocomplete="off">
+                                        <label class="btn btn-outline-info" for="radioToggleButtonOutlined3">3</label>
+                                        <input type="radio" class="btn-check btn-lg" name="radioToggleButtonOutlined"
+                                            id="radioToggleButtonOutlined1" autocomplete="off">
+                                        <label class="btn btn-outline-primary"
+                                            for="radioToggleButtonOutlined1">4</label>
+                                        <input type="radio" class="btn-check btn-lg" name="radioToggleButtonOutlined"
+                                            id="radioToggleButtonOutlined1" autocomplete="off">
+                                        <label class="btn btn-outline-primary"
+                                            for="radioToggleButtonOutlined1">5</label>
+                                        <input type="radio" class="btn-check btn-lg" name="radioToggleButtonOutlined"
+                                            id="radioToggleButtonOutlined1" autocomplete="off">
+                                        <label class="btn btn-outline-primary"
+                                            for="radioToggleButtonOutlined1">N/A</label>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <label for="textarea"></label>
+                                            <textarea id="textarea" class="form-control text-muted"
+                                                rows="4">Write a comment here...</textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="mt-5">
+
+                                <div class="row mt-5">
+                                    <div class="col">
+                                        <div class="h4">Question #5: Lorem ipsum dolor sit amet consectetur, adipisicing
+                                            elit. Commodi, odit?</div>
+                                        <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Dignissimos mollitia illo aspernatur molestiae? Expedita accusamus earum
+                                            cupiditate ipsum. Iste, fugiat.</div>
+                                    </div>
+                                    <div class="col">                                        
+                                            <label for="inputRangeSteps" class="form-label"></label>
+                                            <input type="range" class="form-range" id="inputRangeSteps" min="1" max="5"
+                                                step="1">
+                                        <div class="row">                                                               
+                                            <div class="form-group">
+                                                <label for="textarea"></label>
+                                                <textarea id="textarea" class="form-control text-muted"
+                                                    rows="4">Write a comment here...</textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="mb-5 mt-5">
+                                </div>
+                            </div>
+                        </div>
+
+                        <script src="js/bootstrap.bundle.min.js"></script>
+                        <script>
+                            var goToStep2Trigger = document.querySelector('#go-to-step-2');
+                            goToStep2Trigger.addEventListener('click', function () {
+                                scrollToTop();
+                                setTimeout(function () {
+                                    var step2TabElement = document.querySelector('#step-2-tab');
+                                    var step2Tab = new bootstrap.Tab(step2TabElement);
+                                    step2Tab.show();
+                                }, 1000)
+                            })
+
+                            var goToStep3Trigger = document.querySelector('#go-to-step-3');
+                            goToStep3Trigger.addEventListener('click', function () {
+                                scrollToTop();
+                                setTimeout(function () {
+                                    var step3TabElement = document.querySelector('#step-3-tab');
+                                    var step3Tab = new bootstrap.Tab(step3TabElement);
+                                    step3Tab.show();
+                                }, 1000)
+                            })
+
+                            function scrollToTop() {
+                                scroll({
+                                    top: 0,
+                                    behavior: "smooth"
+                                });
+                            }
+
+                            var submitButton = document.querySelector('#submitButton');
+                            submitButton.addEventListener('click', function () {
+                                submitButton.disabled = true;
+                                submitButton.querySelector('.spinner-border').classList.remove('d-none');
+                                setTimeout(function () {
+                                    window.location.href = 'results.html';
+                                }, 2000)
+                            })
+                        </script>
+</body>
+
+</html>
